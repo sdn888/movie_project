@@ -1,0 +1,14 @@
+<!-- templates/registration/logged_out.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="text-center mt-5">
+    <h2 class="mb-3">Вы вышли из аккаунта</h2>
+    <p class="lead">Спасибо, что были с нами!</p>
+    <div class="mt-4">
+        <a href="{% url 'login' %}" class="btn btn-primary me-2">Войти снова</a>
+        <a href="{% url 'film_list' %}" class="btn btn-outline-secondary">На главную</a>
+    </div>
+</div>
+{% endblock %}
+

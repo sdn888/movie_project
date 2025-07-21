@@ -1,0 +1,11 @@
+{% extends 'films/base.html' %}
+
+{% block title %}Главная - MovieProject{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1 class="display-4">Добро пожаловать в MovieProject</h1>
+    <p class="lead">Здесь вы можете добавлять и просматривать отзывы на фильмы!</p>
+    <a href="{% url 'create_film' %}" class="btn btn-primary mt-3">Добавить фильм</a>
+</div>
+{% endblock %}
